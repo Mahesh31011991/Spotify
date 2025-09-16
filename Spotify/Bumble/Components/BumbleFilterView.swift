@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BumbleFilterView: View {
-    var options:[String] = ["Everyone","Trending"]
+    var options:[String] = ["Everyone","Trending","Latest"]
     @Binding var selection:String
     @Namespace private var namespace
     
