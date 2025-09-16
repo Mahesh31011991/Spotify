@@ -7,11 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9C3070A22E74278500B0828D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C30709C2E74278500B0828D /* Preview Assets.xcassets */; };
-		9C3070A32E74278500B0828D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C30709E2E74278500B0828D /* Assets.xcassets */; };
-		9C3070A42E74278500B0828D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C30709F2E74278500B0828D /* ContentView.swift */; };
-		9C3070A52E74278500B0828D /* SpotifyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3070A02E74278500B0828D /* SpotifyApp.swift */; };
-		9C3070AA2E7427AE00B0828D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C3070A92E7427AE00B0828D /* HomeView.swift */; };
+		9C3070D32E74345900B0828D /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3070D22E74345900B0828D /* SDWebImageSwiftUI */; };
+		9C3070ED2E743D0600B0828D /* SwiftfulRouting in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3070EC2E743D0600B0828D /* SwiftfulRouting */; };
+		9C3070F02E743D1700B0828D /* SwiftfulUI in Frameworks */ = {isa = PBXBuildFile; productRef = 9C3070EF2E743D1700B0828D /* SwiftfulUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,14 +33,14 @@
 		9C30706F2E73EEE400B0828D /* Spotify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Spotify.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C30707F2E73EEE700B0828D /* SpotifyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C3070892E73EEE700B0828D /* SpotifyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9C30709C2E74278500B0828D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		9C30709E2E74278500B0828D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9C30709F2E74278500B0828D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9C3070A02E74278500B0828D /* SpotifyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyApp.swift; sourceTree = "<group>"; };
-		9C3070A92E7427AE00B0828D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9C3070712E73EEE400B0828D /* Spotify */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Spotify;
+			sourceTree = "<group>";
+		};
 		9C3070822E73EEE700B0828D /* SpotifyTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = SpotifyTests;
@@ -60,6 +58,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3070F02E743D1700B0828D /* SwiftfulUI in Frameworks */,
+				9C3070D32E74345900B0828D /* SDWebImageSwiftUI in Frameworks */,
+				9C3070ED2E743D0600B0828D /* SwiftfulRouting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,9 +84,10 @@
 		9C3070662E73EEE400B0828D = {
 			isa = PBXGroup;
 			children = (
-				9C3070A12E74278500B0828D /* Spotify */,
+				9C3070712E73EEE400B0828D /* Spotify */,
 				9C3070822E73EEE700B0828D /* SpotifyTests */,
 				9C30708C2E73EEE700B0828D /* SpotifyUITests */,
+				9C3070EE2E743D1700B0828D /* Frameworks */,
 				9C3070702E73EEE400B0828D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,32 +102,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9C30709D2E74278500B0828D /* Preview Content */ = {
+		9C3070EE2E743D1700B0828D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9C30709C2E74278500B0828D /* Preview Assets.xcassets */,
 			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		9C3070A12E74278500B0828D /* Spotify */ = {
-			isa = PBXGroup;
-			children = (
-				9C3070A62E74278A00B0828D /* Core */,
-				9C30709D2E74278500B0828D /* Preview Content */,
-				9C30709E2E74278500B0828D /* Assets.xcassets */,
-				9C30709F2E74278500B0828D /* ContentView.swift */,
-				9C3070A02E74278500B0828D /* SpotifyApp.swift */,
-			);
-			path = Spotify;
-			sourceTree = "<group>";
-		};
-		9C3070A62E74278A00B0828D /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				9C3070A92E7427AE00B0828D /* HomeView.swift */,
-			);
-			path = Core;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,8 +124,14 @@
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				9C3070712E73EEE400B0828D /* Spotify */,
+			);
 			name = Spotify;
 			packageProductDependencies = (
+				9C3070D22E74345900B0828D /* SDWebImageSwiftUI */,
+				9C3070EC2E743D0600B0828D /* SwiftfulRouting */,
+				9C3070EF2E743D1700B0828D /* SwiftfulUI */,
 			);
 			productName = Spotify;
 			productReference = 9C30706F2E73EEE400B0828D /* Spotify.app */;
@@ -228,6 +215,11 @@
 			);
 			mainGroup = 9C3070662E73EEE400B0828D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				9C3070D12E74345900B0828D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
+				9C3070EA2E743CDA00B0828D /* XCRemoteSwiftPackageReference "SwiftfulUI" */,
+				9C3070EB2E743D0600B0828D /* XCRemoteSwiftPackageReference "SwiftfulRouting" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 9C3070702E73EEE400B0828D /* Products */;
 			projectDirPath = "";
@@ -245,8 +237,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3070A22E74278500B0828D /* Preview Assets.xcassets in Resources */,
-				9C3070A32E74278500B0828D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,9 +261,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C3070AA2E7427AE00B0828D /* HomeView.swift in Sources */,
-				9C3070A42E74278500B0828D /* ContentView.swift in Sources */,
-				9C3070A52E74278500B0828D /* SpotifyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +583,51 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9C3070D12E74345900B0828D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.1.3;
+			};
+		};
+		9C3070EA2E743CDA00B0828D /* XCRemoteSwiftPackageReference "SwiftfulUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.2.0;
+			};
+		};
+		9C3070EB2E743D0600B0828D /* XCRemoteSwiftPackageReference "SwiftfulRouting" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftfulThinking/SwiftfulRouting.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9C3070D22E74345900B0828D /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3070D12E74345900B0828D /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
+		};
+		9C3070EC2E743D0600B0828D /* SwiftfulRouting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3070EB2E743D0600B0828D /* XCRemoteSwiftPackageReference "SwiftfulRouting" */;
+			productName = SwiftfulRouting;
+		};
+		9C3070EF2E743D1700B0828D /* SwiftfulUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9C3070EA2E743CDA00B0828D /* XCRemoteSwiftPackageReference "SwiftfulUI" */;
+			productName = SwiftfulUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9C3070672E73EEE400B0828D /* Project object */;
 }
