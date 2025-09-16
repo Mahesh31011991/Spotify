@@ -17,6 +17,7 @@ struct UserInterest:Identifiable{
 
 struct InterestPillGridView: View {
     var userInterests: [UserInterest] = User.mock.basics + User.mock.interest
+    
     var body: some View {
        
         ZStack{

@@ -40,7 +40,7 @@ extension View{
     
     func themeColor(isSelected:Bool) -> some View{
         self
-            .background(isSelected ? .spotifyGreen : .spotifyDarkGray)
+            .background(isSelected ? .spotifyGreen : .spotifyDarkgray)
             .foregroundStyle(isSelected ? .spotifyBlack : .spotifyWhite)
     }
 }
