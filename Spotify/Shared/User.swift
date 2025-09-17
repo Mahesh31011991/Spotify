@@ -35,11 +35,14 @@ struct User: Codable,Identifiable {
         "This is the section that read me abount ME"
     }
     
-    var images:[String] = [
+    var images:[String] {
+        return [
         "https://picsum.photos/600/600",
         "https://picsum.photos/500/500",
         "https://picsum.photos/400/400"
-    ]
+        ]
+    
+    }
     
     static var mock:User{
         User(
